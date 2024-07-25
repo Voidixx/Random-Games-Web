@@ -191,15 +191,32 @@
         color: #555; 
         margin-bottom: 1em; 
       }
+
+      /* Progress bar styles */
+      .progress-bar {
+        width: 150px;
+        height: 10px;
+        background-color: #ddd; /* Light gray background */
+        border-radius: 5px;
+        margin-top: 15px;
+      }
+
+      .progress-fill {
+        height: 100%;
+        background-color: #2ecc71; /* Green color for the progress */
+        border-radius: 5px;
+        width: 0%; /* Start at 0% filled */
+        transition: width 0.5s ease-in-out; /* Smooth transition */
+      }
     </style>
   </head>
   <body>
-    <!-- <div class="bg-overlay"></div> <div class="game-selector"></div> --> 
-    <div id="gameHistory"></div>
-
     <div class="container">
       <div class="loading">
         <div class="loading-circle"></div>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
       </div>
       <h1>Random Game Web</h1>
       <p>Click the button to be taken to a random game.</p>
