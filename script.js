@@ -27,5 +27,5 @@ fetch("redirect.json")
   .then((response) => response.json())
   .then((data) => {
     const gameCount = data.games.filter((game) => game.trim() !== "").length; 
-    gameCountSpan.textContent = `There are ${gameCount} games`; 
+    gameCountSpan.textContent = `There are ${gameCount} random games`; 
   });
