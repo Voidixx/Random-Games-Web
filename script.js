@@ -1,24 +1,39 @@
 const playButton = document.getElementById("playButton");
 const loadingIndicator = document.querySelector(".loading"); 
-const errorMessage = document.createElement('p'); // Create an error message element
-errorMessage.style.color = 'red';
-errorMessage.style.textAlign = 'center';
-const gameCountSpan = document.getElementById('gameCount'); // Get the game count span
+const gameCountSpan = document.getElementById('gameCount'); 
+const progressBarFill = document.querySelector(".progress-fill"); // Get progress bar element
 
 playButton.addEventListener("click", () => {
   loadingIndicator.style.display = "block"; 
+
+  // Simulate loading progress (replace with actual fetch logic)
+  let progress = 0;
+  const interval = setInterval(() => {
+    progress += 5; // Increment progress by 5%
+    progressBarFill.style.width = `${progress}%`; 
+    if (progress >= 100) {
+      clearInterval(interval);
+    }
+  }, 100); // Update progress every 100 milliseconds
+
   fetch("redirect.json")
     .then((response) => response.json())
     .then((data) => {
-      loadingIndicator.style.display = "none";
+      loadingIndicator.style.display = "none"; 
       const randomIndex = Math.floor(Math.random() * data.games.length);
       const randomGameLink = data.games[randomIndex];
-      window.location.href = randomGameLink;
+
+      // Only redirect if the game link is not empty
+      if (randomGameLink.trim() !== "") {
+        window.location.href = randomGameLink;
+      } else {
+        // Redirect to error page if the game link is empty
+        window.location.href = "error.html";
+      }
     })
     .catch((error) => {
       loadingIndicator.style.display = "none"; 
-      errorMessage.textContent = "Oops! Something went wrong. Please try again later.";
-      document.body.appendChild(errorMessage); // Add the error message to the body
+      window.location.href = "error.html"; 
     });
 });
 
@@ -27,5 +42,5 @@ fetch("redirect.json")
   .then((response) => response.json())
   .then((data) => {
     const gameCount = data.games.filter((game) => game.trim() !== "").length; 
-    gameCountSpan.textContent = `There are ${gameCount} random games`; 
+    gameCountSpan.textContent = `There are ${gameCount} games`; 
   });
