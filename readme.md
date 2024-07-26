@@ -95,7 +95,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 * [![Html][Next.js]][Html-url]
 * [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
+* [![Vue][Vue.s]][Vue-url]
 * [![Angular][Angular.io]][Angular-url]
 * [![Svelte][Svelte.dev]][Svelte-url]
 * [![Laravel][Laravel.com]][Laravel-url]
