@@ -93,7 +93,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [![Html][https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white]][Html-url]
+* [![Html][https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white]][https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white]
 * [![React][React.js]][React-url]
 * [![Vue][html]][Vue-url]
 * [![Angular][Angular.io]][Angular-url]
