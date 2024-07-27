@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks for Your Message!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4; /* Light gray background */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        h1 {
+            text-align: center;
+            color: #3498db; /* Blue heading color */
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+            max-width: 600px;
+        }
+
+        a {
+            color: #3498db; /* Blue link color */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .banner-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="your-banner-image.jpg" alt="Banner Image" class="banner-image"> 
+
+    <h1>Thanks for Reaching Out!</h1>
+    <p>We've received your message and will get back to you as soon as possible.</p>
+    <p>You will be automatically redirected to our website in a few seconds.</p>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "index.html"; // Redirect to the index page
+        }, 5000); // 5000 milliseconds (5 second) delay
+    </script>
+</body>
+</html>
