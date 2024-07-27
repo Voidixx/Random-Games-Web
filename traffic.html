@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Website Traffic</title>
+   <style>
+     body {
+       font-family: sans-serif;
+       line-height: 1.6;
+       margin: 0;
+       padding: 20px;
+       background-color: #f4f4f4; /* Light gray background */
+     }
+
+     .container {
+       max-width: 800px;
+       margin: 0 auto;
+       padding: 20px;
+       background-color: #fff; /* White container background */
+       border-radius: 8px; /* Rounded corners */
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+     }
+
+     h1, h2 {
+       text-align: center;
+       color: #3498db; /* Blue heading color */
+     }
+
+     p {
+       text-align: center;
+       font-size: 1.2em;
+       margin-bottom: 20px;
+     }
+   </style>
+ </head>
+ <body>
+   <div class="container">
+     <h1>Website Traffic</h1>
+     <p>Page Views: <span id="pageViews">Loading...</span></p>
+   </div>
+   <script src="traffic.js"></script>
+ 
+ <script>
+    // Function to update page view count (you'll need to implement this)
+ function updatePageViewCount() {
+   // 1. Fetch the current page view count from storage
+   let pageViews = localStorage.getItem('pageViews');
+   // 2. If there's no stored count, start with 0
+   if (pageViews === null) {
+     pageViews = 0;
+   }
+   // 3. Increment the count
+   pageViews++;
+   // 4. Update the count in local storage
+   localStorage.setItem('pageViews', pageViews);
+   // 5. Update the display on traffic.html
+   document.getElementById('pageViews').textContent = pageViews;
+ }
+
+ // Call the update function on page load
+ updatePageViewCount();
+ 
+ </script>
+ </body>
+ </html>
+
+ 
