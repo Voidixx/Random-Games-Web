@@ -25,7 +25,8 @@ playButton.addEventListener("click", () => {
 
       // Only redirect if the game link is not empty
       if (randomGameLink.trim() !== "") {
-        window.location.href = randomGameLink;
+        // Open the link in a new tab
+        window.open(randomGameLink, '_blank'); 
       } else {
         // Redirect to error page if the game link is empty
         window.location.href = "error.html";
