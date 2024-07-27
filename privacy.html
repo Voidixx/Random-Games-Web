@@ -86,20 +86,13 @@
 
         <h2>Changes to This Privacy Policy</h2>
         <p>We may update this Privacy Policy from time to time. We will post any changes on this page. You are encouraged to periodically review this Privacy Policy for any updates.</p>
-
-        <script>
-        // Wait for the email link to load
-        window.onload = function() {
-            const emailLink = document.getElementById("emailLink");
-            emailLink.addEventListener("click", function() {
-                redirectToIndex(); // Redirect after the link is clicked
-            });
-        };
+<script>
         function redirectToIndex() {
-            window.location.href = "index.html";
+            setTimeout(function() { // Use setTimeout to delay
+                window.location.href = "randomgameweb.netlify.app"; 
+            }, 5000); // 5000 milliseconds (5 seconds) delay
         }
-        </script>
-        
+</script>
         <h2>Contact Us</h2>
         <p>If you have any questions about this Privacy Policy, please contact us at:</p>
         <p>
