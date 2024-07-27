@@ -1,19 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="google-adsense-account" content="ca-pub-8796439652774864">
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T2GS08N16Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-T2GS08N16Q');
-</script>
-
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 <link rel="manifest" href="/images/site.webmanifest">
@@ -47,204 +35,236 @@
     <meta property="og:title" content="Random Game Web - Play a Game Now!"> 
     <meta property="og:description" content="A website that takes you to a random game!"> 
     <meta property="og:image" content="your-website-thumbnail-image.jpg"> 
-    <meta property="og:url" content="https://yourwebsite.com"> 
+    <meta property="og:url" content="https://randomgameweb.netlify.app"> 
     <meta property="og:site_name" content="Random Game Surprise"> 
-    <style>
-      body {
-        background-color: #f0f2f5; /* Soft gray background */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        font-family: "Open Sans", sans-serif; 
-        color: #333; 
-        overflow: hidden;
-        padding: 2em; 
-      }
+  <style>
+     body {
+  background-color: #f0f2f5; /* Soft gray background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  overflow: hidden;
+  padding: 2em;
+}
 
-      .container {
-        max-width: 600px; 
-        margin: 0 auto;
-        padding: 2em;
-      }
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2em;
+height: 100vh;
+}
 
-      h1 {
-        font-size: 2.5em; 
-        margin-bottom: 1em; /* Reduced margin */
-        text-align: center;
-        color: #3498db; 
-        font-family: "Poppins", sans-serif; 
-      }
+h1 {
+  font-size: 30px !important; /* Reduced font size */
+  line-height: 1.0;
+  margin-bottom: 1em; /* Reduced margin */
+  text-align: center;
+  color: #3498db;
+  font-family: "Poppins", sans-serif;
+  max-width: 600px; /* Add a max-width */
+  margin: 0em; /* Center the header */
 
-      p {
-        font-size: 1.1em;
-        margin-bottom: 1em; /* Reduced margin */ 
-        text-align: center;
-        color: #555;
-        line-height: 1.5;
-        font-family: 'Georgia', serif;
-      }
+  /* Make the header stay at the top and centered */
+  /* position: fixed; */
+ position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
 
-      .button-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 2em; /* Reduced margin */
-      }
+p {
+  font-size: 1.1em;
+  margin-bottom: 1em; /* Reduced margin */
+  text-align: center;
+  color: #555;
+  line-height: 1.5;
+  font-family: 'Georgia', serif;
+  top: 0;
+}
 
-      .play-button {
-        padding: 1.5rem 3rem;
-        font-size: 1.5rem;
-        border: none;
-        border-radius: 20px;
-        background-color: #2ecc71; 
-        color: #fff; 
-        cursor: pointer;
-        transition: transform 0.1s ease, box-shadow 0.1s ease;
-        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
-      }
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em; /* Reduced margin */
+}
 
-      .play-button:hover {
-        transform: scale(1.1);
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-      }
+.play-button {
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #2ecc71;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.3s ease; /* Added transition for background color */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle box shadow */
+}
 
-      .play-button:active {
-        transform: scale(0.95);
-        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
-      }
+.play-button:hover {
+  transform: scale(1.05); /* Slightly smaller scale on hover */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Slightly darker shadow on hover */
+  background-color: #27ae60; /* Slightly darker green on hover */
+}
 
-      .loading {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 100;
-      }
+.play-button:active {
+  transform: scale(0.95);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+    
+.loading {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
 
-      .loading-circle {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        border: 6px solid transparent;
-        border-color: #ff6347 transparent #ff6347 transparent;
-        animation: spin 1.2s linear infinite;
-        position: relative;
-      }
-      
-      .loading-circle::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background-color: #ff6347;
-        animation: pulse 1.5s ease-in-out infinite;
-      }
-      
-      @keyframes pulse {
-        0% { transform: scale(1); opacity: 1; }
-        50% { transform: scale(1.1); opacity: 0.5; }
-        100% { transform: scale(1); opacity: 1; }
-      }
+.loading-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  border-color: #ff6347 transparent #ff6347 transparent;
+  animation: spin 1.2s linear infinite;
+  position: relative;
+}
 
-      @media (max-width: 768px) {
-        .container {
-          max-width: 90%; 
-        }
+.loading-circle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ff6347;
+  animation: pulse 1.5s ease-in-out infinite;
+}
 
-        h1 {
-          font-size: 2em; 
-        }
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
-        .play-button {
-          font-size: 1.3rem;
-          padding: 1rem 2rem;
-        }
-      }
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
 
-      /* Footer styles */
-      footer {
-        background-color: transparent; /* Transparent background */
-        padding: 1rem 0; /* Adjust spacing as needed */
-        text-align: center; /* Center the text */
-        color: #333; /* Darker text color for contrast */
-        font-size: 0.8em; /* Smaller font size */
-        position: fixed; /* Fix the footer to the bottom of the viewport */
-        bottom: 0; /* Position it at the bottom */
-        width: 100%; /* Make it full width */
-        z-index: 1; /* Make sure the footer stays on top */
-      }
+  h1 {
+    font-size: 1.8em; /* Reduced font size for mobile */
+    padding: 1rem;
+  }
 
-      footer p {
-        margin: 0; /* Remove default margin */
-        line-height: 1.2; /* Adjust line height as needed */
-      }
+  .play-button {
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+  }
 
-      /* Optional: For a subtle border */
-      footer::before { 
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 1px;
-        background-color: #ddd;
-        opacity: 0.5;
-      }
+  /* Make the header stretch across the screen on mobile */
+  h1 {
+    width: 100%;
+  }
+}
 
-      .copy {
-        margin-bottom: 1em; /* Space between text lines */
-      }
+/* Footer styles */
+footer {
+  background-color: transparent; /* Transparent background */
+  padding: 1rem 0; /* Adjust spacing as needed */
+  text-align: center; /* Center the text */
+  color: #333; /* Darker text color for contrast */
+  font-size: 0.8em; /* Smaller font size */
+  position: fixed; /* Fix the footer to the bottom of the viewport */
+  bottom: 0; /* Position it at the bottom */
+  width: 100%; /* Make it full width */
+  z-index: 1; /* Make sure the footer stays on top */
+}
 
-      .submit-button {
-        background-color: #2ecc71; /* Green background for the button */
-        color: #fff; /* White text */
-        padding: 0.8rem 1.5rem; /* Reduced padding */
-        border: none;
-        border-radius: 20px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-        font-size: 0.9em; /* Reduced font size */
-        margin-top: 1em;
-      }
+footer p {
+  margin: 0; /* Remove default margin */
+  line-height: 1.2; /* Adjust line height as needed */
+}
 
-      .submit-button:hover {
-        background-color: #27ae60; /* Slightly darker green on hover */
-      }
+/* Optional: For a subtle border */
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  opacity: 0.5;
+}
 
-      .game-count { 
-        text-align: center; 
-        font-size: 1.2em; 
-        color: #555; 
-        margin-bottom: 1em; 
-      }
+.copy {
+  margin-bottom: 1em; /* Space between text lines */
+}
 
-      /* Progress bar styles */
-      .progress-bar {
-        width: 150px;
-        height: 10px;
-        background-color: #ddd; /* Light gray background */
-        border-radius: 5px;
-        margin-top: 15px;
-      }
+.submit-button {
+  background-color: #2ecc71; /* Green background for the button */
+  color: #fff; /* White text */
+  padding: 0.8rem 1.5rem; /* Reduced padding */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 0.9em; /* Reduced font size */
+  margin-top: 1em;
+}
 
-      .progress-fill {
-        height: 100%;
-        background-color: #2ecc71; /* Green color for the progress */
-        border-radius: 5px;
-        width: 0%; /* Start at 0% filled */
-        transition: width 0.5s ease-in-out; /* Smooth transition */
-      }
-    </style>
+.submit-button:hover {
+  background-color: #27ae60; /* Slightly darker green on hover */
+}
+
+.game-count {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+/* Progress bar styles */
+.progress-bar {
+  width: 150px;
+  height: 10px;
+  background-color: #ddd; /* Light gray background */
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #2ecc71; /* Green color for the progress */
+  border-radius: 5px;
+  width: 0%; /* Start at 0% filled */
+  transition: width 0.5s ease-in-out; /* Smooth transition */
+}
+  </style>
+  
+  
   </head>
   <body>
     <div class="container">
@@ -255,7 +275,7 @@
         </div>
       </div>
       <h1>Random Game Web</h1>
-      <p>Click the button to be taken to a random game.</p>
+      <p>Click the button to be taken to a random game.</p> 
       <p class="game-count"><span id="gameCount"></span></p> 
       <div class="button-container">
         <button id="playButton" class="play-button">
