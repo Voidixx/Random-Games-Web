@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8796439652774864"
-     crossorigin="anonymous"></script>
- 
-<meta charset="UTF-8">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8796439652774864"
+        crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Random Game Web</title>
     <style>
@@ -47,10 +47,20 @@
         a:hover {
             text-decoration: underline;
         }
+        .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px; /* Adjust width as needed */
+    height: 30px; /* Adjust height as needed */
+    cursor: pointer;
+        }
+    
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="back.png" class="back-arrow" onclick="goToIndex()">
         <h1>Privacy Policy</h1>
         <p>This Privacy Policy describes how Random Game Web ("we", "us", or "our") collects, uses, discloses, and protects your personal information when you use our website. </p>
 
@@ -94,6 +104,9 @@
             setTimeout(function() { // Use setTimeout to delay
                 window.location.href = "/thanks.html"; 
             }, 3000); // 300p milliseconds (3 second) delay
+        }
+        function goToIndex() {
+            window.location.href = "index.html";
         }
 </script>
         <h2>Contact Us</h2>
