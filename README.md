@@ -30,4 +30,4 @@
 
 We welcome everyone to contributions from everyone. Here's how you can help improve Random Game Web:
 
-**Report issues:** Found a bug or have a suggestion? [Open an issue](https://github.com/CoderMessinaREAL/RandomGameWeb/issues)
+**Report issues:** Found a bug or have a suggestion? [Open an issue](https://github.com/CoderMessinaREAL/RandomGameWeb/issues) on Github.
