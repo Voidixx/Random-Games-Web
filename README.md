@@ -4,12 +4,17 @@
 
 ### Option 1 Github:
 
+
 - Fork this repository by clicking the fork button at the top right of the page.
 
 - Then go to Redirect.json and add your games link!
 
+## Open a Pull Request:
 - After adding your games, go to your forked repository on Github.
 
 - Click the "New pull request" button.
 
-- Provide a brief description of what you have added, and tell us about the game
+- Provide a brief description of what you have added, and tell us about the game.
+
+
+### Option 2
