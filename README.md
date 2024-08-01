@@ -36,3 +36,8 @@ We welcome everyone to contributions from everyone. Here's how you can help impr
 - Fork and clone repository.
 - Make your changes or improvements.
 - Open a Pull Request with a detailed description of changes.
+
+**Enhance the Website:**
+- Add new features.
+- Improve the user interface.
+- Optimize Performance.
