@@ -10,4 +10,4 @@
 
 - **After adding your games, go to your forked repository on Github.**
 
-- **Click the "New pull request" button.
+- **Click the "New pull request" button.**
