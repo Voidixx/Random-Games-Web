@@ -2,4 +2,4 @@
 
 ## How do you submit a game?
 
-- te
+- Fork this repo
