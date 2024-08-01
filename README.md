@@ -41,3 +41,9 @@ We welcome everyone to contributions from everyone. Here's how you can help impr
 - Add new features.
 - Improve the user interface.
 - Optimize Performance.
+
+### Contact
+
+Got questions or need support? Reach out to us:
+
+- **Email:** help.randomgamesweb@outlook.com
