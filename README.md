@@ -25,3 +25,9 @@
 - Fill out the submission form with a website link.
 
 - Click "Submit" and our team will review your game shortly.
+
+### How to Contribute
+
+We welcome everyone to contributions from everyone. Here's how you can help improve Random Game Web:
+
+**Report issues:** Found a bug or have a suggestion? [Open an issue]()
