@@ -47,3 +47,4 @@ We welcome everyone to contributions from everyone. Here's how you can help impr
 Got questions or need support? Reach out to us:
 
 - **Email:** help.randomgamesweb@outlook.com
+- **Github Issues:** [Random Game Web Issues](https://github.com/CoderMessinaREAL/RandomGameWeb/issues)
