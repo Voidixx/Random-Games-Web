@@ -48,7 +48,3 @@ Got questions or need support? Reach out to us:
 
 - **Email:** help.randomgamesweb@outlook.com
 - **Github Issues:** [Random Game Web Issues](https://github.com/Voidixx/Random-Game-Web/issues)
-
-## Contributors
-
-- [Voidixx](https://github.com/voidixx)
