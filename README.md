@@ -18,4 +18,8 @@
 
 ### Option 2: Submit via Website
 
-- Visit our website:[Random Game Web](https://randomgameweb.netlify.app)
+- Visit our website: [Random Game Web](https://randomgameweb.netlify.app)
+
+- Navigate to the "Submit a Game" section.
+
+- Fill out the submission form with the following details
