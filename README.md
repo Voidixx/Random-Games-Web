@@ -30,7 +30,7 @@
 
 We welcome everyone to contributions from everyone. Here's how you can help improve Random Game Web:
 
-**Report issues:** Found a bug or have a suggestion? [Open an issue](https://github.com/Voidixx/RandomGameWeb/issues) on Github.
+**Report issues:** Found a bug or have a suggestion? [Open an issue](https://github.com/Voidixx/Random-Game-Web/issues) on Github.
 
 **Improve our code:**
 - Fork and clone repository.
@@ -47,4 +47,4 @@ We welcome everyone to contributions from everyone. Here's how you can help impr
 Got questions or need support? Reach out to us:
 
 - **Email:** help.randomgamesweb@outlook.com
-- **Github Issues:** [Random Game Web Issues](https://github.com/Voidixx/RandomGameWeb/issues)
+- **Github Issues:** [Random Game Web Issues](https://github.com/Voidixx/Random-Game-Web/issues)
