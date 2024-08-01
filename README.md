@@ -48,3 +48,14 @@ Got questions or need support? Reach out to us:
 
 - **Email:** help.randomgamesweb@outlook.com
 - **Github Issues:** [Random Game Web Issues](https://github.com/Voidixx/Random-Game-Web/issues)
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
