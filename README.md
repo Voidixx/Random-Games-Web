@@ -24,4 +24,4 @@
 
 - Fill out the submission form with a website link
 
-- Click ""Submit"" and our team will review your game shortly
+- Click "Submit" and our team will review your game shortly
