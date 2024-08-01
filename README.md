@@ -51,13 +51,4 @@ Got questions or need support? Reach out to us:
 
 ## Contributors
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-[![All Contributors](https://img.shields.io/github/all-contributors/voidixx/random-game-web?color=ee8449&style=flat-square)](#contributors)
+- [Voidixx](https://github.com/Voidixx)
