@@ -22,4 +22,6 @@
 
 - Navigate to the "Submit a Game" section.
 
-- Fill out the submission form with the following details
+- Fill out the submission form with a website link
+
+- Click ""Submit"" and our team will review your game shortly
