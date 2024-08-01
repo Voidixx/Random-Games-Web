@@ -8,4 +8,6 @@
 
 - **Then go to Redirect.json and add your games link!**
 
-- *After adding your games, go to your forked repository on Github.*
+- **After adding your games, go to your forked repository on Github.**
+
+- **Click the "New pull request" button.
