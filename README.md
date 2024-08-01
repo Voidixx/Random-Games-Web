@@ -31,3 +31,7 @@
 We welcome everyone to contributions from everyone. Here's how you can help improve Random Game Web:
 
 **Report issues:** Found a bug or have a suggestion? [Open an issue](https://github.com/CoderMessinaREAL/RandomGameWeb/issues) on Github.
+**Improve our code:**
+- Fork and clone repository.
+- Make your changes or improvements.
+- Open a Pull Request with a detailed description of changes.
