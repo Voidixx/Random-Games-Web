@@ -4,7 +4,7 @@
 
 ### Option 1 Github:
 
-- **Fork this repository** by clicking the fork button at the top right of the page.
+- *Fork this repository* by clicking the fork button at the top right of the page.
 
 - **Then go to Redirect.json and add your games link!**
 
