@@ -59,3 +59,5 @@ Got questions or need support? Reach out to us:
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+[![All Contributors](https://img.shields.io/github/all-contributors/voidixx/random-game-web?color=ee8449&style=flat-square)](#contributors)
